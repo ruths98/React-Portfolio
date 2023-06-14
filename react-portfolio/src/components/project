@@ -1,0 +1,20 @@
+import React from 'react';
+import portfolio from './portfolio';
+
+const website = [//potentially uneccessary, put project info the the returned div.
+    {
+        img: 'filepath',
+        title: 'Pocket Plant',
+        href: 'url here',
+        description: 'A website for keeping track of plants you like and tips you need.'
+    }
+]
+
+export default function project() {
+  return (
+    <div>
+        <portfolio title = {website.title} description={website.description} href='{website.href}'/>
+
+    </div>
+  );
+}
