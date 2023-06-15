@@ -5,7 +5,7 @@ export default function Header() {
      <header className="header">
   <h2>Ruth Stevens</h2>
   <nav>
-    <li>portfolio</li>
+    <li >portfolio</li>
     <li>about me</li>
     <li>contact me</li>
     <li>resume</li>
