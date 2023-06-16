@@ -23,18 +23,24 @@ import Footer from './footer'
 //the function pageTitle is a state hook with the object being name and the function running that will change the value of name is setName
 // function pageTitle(){
 //     const [name, setName] = useState('');
-    
+
 //     useEffect(() => {
 //     document.title = `${clickedTab}`;
 //     })
 // }
 
+
+//see current src folder in class activities
 export default function Main() {
-    return (
-        <div>
+
+    const displayPage = () => {
+
+        return (
             <Header />
             <Portfolio />
             <Footer />
-        </div>
-    )
+        )
+
+    }
+
 }

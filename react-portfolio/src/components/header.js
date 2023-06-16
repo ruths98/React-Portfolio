@@ -1,14 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+// const [tab, setTab] = useState(about)
+// useEffect( function isClicked(){
+// const clicked = 
+// if({target}== clicked)
+// })
+
+// const isClicked = ()=> {
+// if({target})
+// }
+
 
 export default function Header() {
+const [color, setColor] = useState('rgb(12, 67, 48)');
+const navStyle = {backgroundColor: color}
+
     return(
      <header className="header">
   <h2>Ruth Stevens</h2>
-  <nav>
-    <li >portfolio</li>
-    <li>about me</li>
-    <li>contact me</li>
-    <li>resume</li>
+  <nav  style={navStyle}> 
+    <button onClick={()=> setColor('white')}>portfolio</button>
+    <button onClick={()=> setColor('white')}>about </button>
+    <button onClick={()=> setColor('white')}>contact </button>
+    <button onClick={()=> setColor('white')}>resume</button>
   </nav>
   </header>   
     )

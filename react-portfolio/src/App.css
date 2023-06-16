@@ -1,8 +1,18 @@
-.header{
-  background-color:rgb(12, 67, 48);
-  color:white;
+nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 20%;
 }
 
-.footer{
-  text-align:center;
+.header {
+  display: flex;
+  background-color: rgb(12, 67, 48);
+  color: white;
+   justify-content:flex-start;
+
+}
+
+.footer {
+  text-align: center;
 }
