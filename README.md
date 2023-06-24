@@ -12,7 +12,9 @@ To view the website, use this url: https://ruths98.github.io/React-Portfolio/
 To contact me on github, click the github icon at the bottom of the website or visit this url: https://github.com/ruths98
 
 Screenshots of the project:
-![Screenshot of project]()
+![Screenshot of project](./react-portfolio/src/images/react1.png)
+![Screenshot of project](./react-portfolio/src/images/react2.png)
+![Screenshot of project](./react-portfolio/src/images/react3.png)
 
 ## Credits
  linkedIn logo from logoking on vecteezy.
