@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.fba6f56a.css",
+    "main.js": "/React-Portfolio/static/js/main.a4cb0e67.js",
+    "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/pocketPlant.png": "/React-Portfolio/static/media/pocketPlant.6ff8d59e8cf94bd81ddf.png",
+    "static/media/rave-reviews.png": "/React-Portfolio/static/media/rave-reviews.d4bc9959a39e9684209a.png",
+    "static/media/selfie.JPG": "/React-Portfolio/static/media/selfie.eeeecbbed93aa39e16dd.JPG",
+    "static/media/planner.png": "/React-Portfolio/static/media/planner.337934332811e7569e7f.png",
+    "static/media/prework-ss.png": "/React-Portfolio/static/media/prework-ss.e60eed3b4120ee72c1b1.png",
+    "static/media/linkedIn.png": "/React-Portfolio/static/media/linkedIn.abcfdbfa486f938b2c17.png",
+    "static/media/quiz.png": "/React-Portfolio/static/media/quiz.55614cc7f325ea457767.png",
+    "index.html": "/React-Portfolio/index.html",
+    "main.fba6f56a.css.map": "/React-Portfolio/static/css/main.fba6f56a.css.map",
+    "main.a4cb0e67.js.map": "/React-Portfolio/static/js/main.a4cb0e67.js.map",
+    "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fba6f56a.css",
+    "static/js/main.a4cb0e67.js"
+  ]
+}
