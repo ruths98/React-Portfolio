@@ -51,7 +51,8 @@ export default function Contact() {
             style={{width:'50%', height:'300px'}}
           />
           </div> 
-          <button >
+          <button 
+          >
             Send
           </button>
                        </form>
