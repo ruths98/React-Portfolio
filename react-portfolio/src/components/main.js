@@ -1,46 +1,38 @@
 import React from 'react'
-// import { useState, useEffect } from 'React'
+import { useState } from 'react'
 import Portfolio from './portfolio'
-// import About from './about'
-// import Contact from './contact'
-// import Resume from './resume'
+import About from './about'
+import Contact from './contact'
+import Resume from './resume'
 import Header from './header'
 import Footer from './footer'
 
-//useState stuff here
-// const pageContent = () => {
-//     const [page, setPage] = useState(About)
-// }
-
-// const clickedTab = ()=> {
-// const [tab, setTab] = useState(About)
-// }
-
-//useEffect hook stuff here
-// useEffect(() => {
-//     alert('called when value of `endpoint` or `id` changes');
-//    }, [endpoint, id]);
-//the function pageTitle is a state hook with the object being name and the function running that will change the value of name is setName
-// function pageTitle(){
-//     const [name, setName] = useState('');
-
-//     useEffect(() => {
-//     document.title = `${clickedTab}`;
-//     })
-// }
-
-
-//see current src folder in class activities
 export default function Main() {
+    const [currentPage, setCurrentPage] = useState('About');
 
-    const displayPage = () => {
-
-        return (
-            <Header />
-            <Portfolio />
-            <Footer />
-        )
-
-    }
-
+    // This renderPage method returns the appropriate component depending on what the currentPage is set to, which changes based on the navigation tabs being selected.
+    const renderPage = () => {
+      if (currentPage === 'About') {
+        return <About />;
+      }
+      if (currentPage === 'Portfolio') {
+        return <Portfolio />;
+      }
+      if (currentPage === 'Contact') {
+        return <Contact />;
+      }
+      return <Resume />;
+    };
+  
+    const handlePageChange = (page) => setCurrentPage(page);
+  
+    return (
+      <div>
+        {/*currentPage and handlePage change, which are exported from header, are being passed as props */}
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        {/* // the renderPage function is being called and returning the component that matches the currentPage*/}
+        {renderPage()}
+        <Footer />
+      </div>
+    );
 }

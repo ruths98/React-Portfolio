@@ -1,55 +1,56 @@
-import React, {useState} from 'react'
+import React, { useEffect, useState } from 'react'
 
-// const [tab, setTab] = useState(about)
-// useEffect( function isClicked(){
-// const clicked = 
-// if({target}== clicked)
-// })
+export default function Header({currentPage, handlePageChange}) {
 
-// const isClicked = ()=> {
-// if({target})
-// }
+  return (
+    <header className="header">
+      <h2>Ruth Stevens</h2>
+      <ul className="nav nav-tabs">
+        <li className="nav-item">
+          <a
+            href="#About"
+            onClick={() => handlePageChange('About')}
+            //  when the onClick eventListener is activated, we pass About through handlePageChange
+            //*  this ternary operator is checking to see if the current clicked page is About. if it is, the nav-link is set to active. if it is not, the link is not active.
+            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          >
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#Portfolio"
+            onClick={() => handlePageChange('Portfolio')}
+            //  when the onClick eventListener is activated, we pass Portfolio through handlePageChange
+            //below we are checking if currentPage is portfolio. if it is the classname is set to nav-link active.
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+          >
+            Portfolio
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#Contact"
+            onClick={() => handlePageChange('Contact')}
+            //  when the contact link is clicked, contact is passed through handlePageChange.
+            //below we are checking if currentPage is contact. if it is the classname is set to nav-link active.
+            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          >
+            Contact
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#Resume"
+            //  when the contact link is clicked, resume is passed through handlePageChange.
+            //below we are checking if currentPage is resume. if it is the classname is set to nav-link active.            onClick={() => handlePageChange('Resume')}
+            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
 
-
-export default function Header() {
-const [color, setColor] = useState('rgb(12, 67, 48)');
-const navStyle = {backgroundColor: color}
-
-    return(
-     <header className="header">
-  <h2>Ruth Stevens</h2>
-  <nav  style={navStyle}> 
-    <button onClick={()=> setColor('white')}>portfolio</button>
-    <button onClick={()=> setColor('white')}>about </button>
-    <button onClick={()=> setColor('white')}>contact </button>
-    <button onClick={()=> setColor('white')}>resume</button>
-  </nav>
-  </header>   
-    )
+    </header>
+  )
 }
-
-//copy and paste from codecademy
- // call useState and assign its return values to `color` and `setColor`
-//  const [color, setColor] = useState();
-
-//  const divStyle = {backgroundColor: color};
-
-//   return (
-//     <div style={divStyle}>
-//       <p>The color is {color}</p>
-//       <button onClick={()=>setColor('Aquamarine')}>
-//         Aquamarine
-//       </button>
-//       <button onClick={()=>setColor('BlueViolet')}>
-//         BlueViolet
-//       </button>
-//       <button onClick={()=>setColor('Chartreuse')}>
-//         Chartreuse
-//       </button>
-//       <button onClick={()=>setColor('CornflowerBlue')}>
-//         CornflowerBlue
-//       </button>
-//     </div>
-//   );
-// }
-
